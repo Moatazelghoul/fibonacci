@@ -1,4 +1,4 @@
-#!/bin/ksh
+#!/bin/bash
 N=${1:-10}
 
 a=0
