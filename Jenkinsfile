@@ -16,18 +16,18 @@ pipeline {
     stages {
         stage('Relative path') {
             steps {
-                bat "./scripts/fibonacci.sh ${env.NUMBER}"
+                bat "C:\\Program Files\\Git\\bin\\bash.exe ./scripts/fibonacci.sh ${env.NUMBER}"
             }
         }
         stage('Full path') {
             steps {
-                bat "${env.WORKSPACE}/scripts/fibonacci.sh ${env.NUMBER}"
+                bat "C:\\Program Files\\Git\\bin\\bash.exe ${env.WORKSPACE}/scripts/fibonacci.sh ${env.NUMBER}"
             }
         }
         stage('Change directory') {
             steps {
                 dir("${env.WORKSPACE}/scripts"){
-                    bat "./fibonacci.sh ${env.NUMBER}"
+                    bat "C:\\Program Files\\Git\\bin\\bash.exe ./fibonacci.sh ${env.NUMBER}"
                 }
             }
         }
