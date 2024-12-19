@@ -1,5 +1,5 @@
 # 03_03 Run scripts from the pipeline
-<a href='http://localhost:8081/job/fibonacci/'><img src='http://localhost:8081/buildStatus/icon?job=fibonacci'></a>
+[![Build Status](http://localhost:8081/buildStatus/icon?job=fibonacci)](http://localhost:8081/job/fibonacci/)
 Pipelines can be used to call scripts that are stored in a repo along with a Jenkinsfile.
 
 ## Pipeline steps for calling scripts
